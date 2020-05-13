@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF17DAC0-0A2B-4C0B-8C5B-F66D9EFD9713}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>transport_manager</RootNamespace>
+    <AssemblyName>transport-manager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.19\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalcPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcPage.Designer.cs">
+      <DependentUpon>CalcPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePages\CreateSuperUserPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePages\CreateSuperUserPage.Designer.cs">
+      <DependentUpon>CreateSuperUserPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePages\CreateWaybillPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePages\CreateWaybillPage.Designer.cs">
+      <DependentUpon>CreateWaybillPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database Source\Drivers.cs" />
+    <Compile Include="Database Source\ConnectionSettings.cs" />
+    <Compile Include="Database Source\ReportDriver.cs" />
+    <Compile Include="Database Source\ReportTransport.cs" />
+    <Compile Include="Database Source\Transport.cs" />
+    <Compile Include="Database Source\Users.cs" />
+    <Compile Include="Database Source\Waybills.cs" />
+    <Compile Include="Models\Roles.cs" />
+    <Compile Include="ShowPages\DriversPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPages\DriversPage.Designer.cs">
+      <DependentUpon>DriversPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPages\EditDriverPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPages\EditDriverPage.Designer.cs">
+      <DependentUpon>EditDriverPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPages\EditSuperUserPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPages\EditSuperUserPage.Designer.cs">
+      <DependentUpon>EditSuperUserPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPages\EditTransportPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPages\EditTransportPage.Designer.cs">
+      <DependentUpon>EditTransportPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPages\InfoPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPages\InfoPage.Designer.cs">
+      <DependentUpon>InfoPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorizationPages\LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorizationPages\LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DriverModel.cs" />
+    <Compile Include="Models\TransportModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\WaybillModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AuthorizationPages\RegistrationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorizationPages\RegistrationPage.Designer.cs">
+      <DependentUpon>RegistrationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPages\SuperUserPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPages\SuperUserPage.Designer.cs">
+      <DependentUpon>SuperUserPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePages\TransportAddPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePages\TransportAddPage.Designer.cs">
+      <DependentUpon>TransportAddPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPages\TransportPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPages\TransportPage.Designer.cs">
+      <DependentUpon>TransportPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPages\UsersPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPages\UsersPage.Designer.cs">
+      <DependentUpon>UsersPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPages\WaybillPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPages\WaybillPage.Designer.cs">
+      <DependentUpon>WaybillPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CalcPage.resx">
+      <DependentUpon>CalcPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePages\CreateSuperUserPage.resx">
+      <DependentUpon>CreateSuperUserPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePages\CreateWaybillPage.resx">
+      <DependentUpon>CreateWaybillPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPages\DriversPage.resx">
+      <DependentUpon>DriversPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPages\EditDriverPage.resx">
+      <DependentUpon>EditDriverPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPages\EditSuperUserPage.resx">
+      <DependentUpon>EditSuperUserPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPages\EditTransportPage.resx">
+      <DependentUpon>EditTransportPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPages\InfoPage.resx">
+      <DependentUpon>InfoPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorizationPages\LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AuthorizationPages\RegistrationPage.resx">
+      <DependentUpon>RegistrationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPages\SuperUserPage.resx">
+      <DependentUpon>SuperUserPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePages\TransportAddPage.resx">
+      <DependentUpon>TransportAddPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPages\TransportPage.resx">
+      <DependentUpon>TransportPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPages\UsersPage.resx">
+      <DependentUpon>UsersPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPages\WaybillPage.resx">
+      <DependentUpon>WaybillPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -13,10 +13,11 @@ git clone https://github.com/4llower/transport-managment-application
 
 4. Build project
 
-##Description
+## Description
+
 This application was developed for training to work with MySQL databases, C#, Windows Forms 
 
-##Properties:
+## Properties:
 
 * MySQL server to save application data
 * Implemented CRUD actions for all tables

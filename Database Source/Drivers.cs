@@ -76,6 +76,7 @@ namespace transport_manager.Database_Source
 
             return new DriverModel()
             {
+                Id = (int)(uint)table.Rows[0]["Id"],
                 Name = (String)table.Rows[0]["Name"],
                 Surname = (String)table.Rows[0]["Surname"],
                 Fathername = (String)table.Rows[0]["Fathername"],

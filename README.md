@@ -4,7 +4,7 @@
 
 1.
 ~~~
-git clone https://github.com/4llower/transport-managment-application
+git clone https://github.com/solTtech/Transport-GPS.git
 ~~~
 
 2. Install MAMP or another admin panel for MySQL (not neccesary).

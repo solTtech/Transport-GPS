@@ -39,7 +39,7 @@
             // 
             this.comboBox_SelectTransport.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_SelectTransport.FormattingEnabled = true;
-            this.comboBox_SelectTransport.Location = new System.Drawing.Point(166, 81);
+            this.comboBox_SelectTransport.Location = new System.Drawing.Point(231, 87);
             this.comboBox_SelectTransport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_SelectTransport.Name = "comboBox_SelectTransport";
             this.comboBox_SelectTransport.Size = new System.Drawing.Size(144, 24);

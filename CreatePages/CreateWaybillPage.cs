@@ -91,5 +91,10 @@ namespace transport_manager
             MessageBox.Show("Путевой лист был успешно добавлен.");
             Close();
         }
+
+        private void CreateWaybillPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

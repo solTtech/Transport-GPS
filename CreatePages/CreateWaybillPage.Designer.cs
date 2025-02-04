@@ -38,87 +38,85 @@
             this.button_Create = new System.Windows.Forms.Button();
             this.comboBox_SelectTransport = new System.Windows.Forms.ComboBox();
             this.dateTimePicker_SelectDate = new System.Windows.Forms.DateTimePicker();
-            this.PriceField = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(331, 63);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(252, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 25);
+            this.label1.Size = new System.Drawing.Size(136, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Создание путевого листа";
+            this.label1.Text = "Додавання трекера";
             // 
             // comboBox_SelectDriver
             // 
             this.comboBox_SelectDriver.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_SelectDriver.FormattingEnabled = true;
-            this.comboBox_SelectDriver.Location = new System.Drawing.Point(236, 158);
-            this.comboBox_SelectDriver.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_SelectDriver.Location = new System.Drawing.Point(157, 146);
+            this.comboBox_SelectDriver.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.comboBox_SelectDriver.Name = "comboBox_SelectDriver";
-            this.comboBox_SelectDriver.Size = new System.Drawing.Size(442, 33);
+            this.comboBox_SelectDriver.Size = new System.Drawing.Size(296, 24);
             this.comboBox_SelectDriver.TabIndex = 2;
             this.comboBox_SelectDriver.SelectedIndexChanged += new System.EventHandler(this.comboBox_SelectDriver_SelectedIndexChanged);
             // 
             // LengthField
             // 
-            this.LengthField.Location = new System.Drawing.Point(318, 329);
-            this.LengthField.Margin = new System.Windows.Forms.Padding(2);
+            this.LengthField.Location = new System.Drawing.Point(157, 261);
+            this.LengthField.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.LengthField.Name = "LengthField";
-            this.LengthField.Size = new System.Drawing.Size(262, 31);
+            this.LengthField.Size = new System.Drawing.Size(296, 22);
             this.LengthField.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(363, 121);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(242, 129);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 25);
+            this.label2.Size = new System.Drawing.Size(158, 16);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Выбор водителя";
+            this.label2.Text = "Марка/модель трекера";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(353, 208);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(235, 75);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(198, 25);
+            this.label3.Size = new System.Drawing.Size(174, 16);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Выбор транспорта";
+            this.label3.Text = "Вибір техніки/транспорту";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(375, 302);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(221, 244);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(164, 25);
+            this.label4.Size = new System.Drawing.Size(178, 16);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Длина поездки";
+            this.label4.Text = "Особа, що встановлювала";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(375, 454);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(250, 183);
+            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 25);
+            this.label5.Size = new System.Drawing.Size(135, 16);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Дата поездки";
+            this.label5.Text = "Дата встановлення";
             // 
             // button_Create
             // 
-            this.button_Create.Location = new System.Drawing.Point(318, 545);
-            this.button_Create.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Create.Location = new System.Drawing.Point(224, 328);
+            this.button_Create.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.button_Create.Name = "button_Create";
-            this.button_Create.Size = new System.Drawing.Size(262, 73);
+            this.button_Create.Size = new System.Drawing.Size(175, 47);
             this.button_Create.TabIndex = 9;
-            this.button_Create.Text = "Создать";
+            this.button_Create.Text = "Додати";
             this.button_Create.UseVisualStyleBackColor = true;
             this.button_Create.Click += new System.EventHandler(this.button_Create_Click);
             // 
@@ -126,45 +124,28 @@
             // 
             this.comboBox_SelectTransport.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_SelectTransport.FormattingEnabled = true;
-            this.comboBox_SelectTransport.Location = new System.Drawing.Point(236, 244);
-            this.comboBox_SelectTransport.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox_SelectTransport.Location = new System.Drawing.Point(157, 98);
+            this.comboBox_SelectTransport.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.comboBox_SelectTransport.Name = "comboBox_SelectTransport";
-            this.comboBox_SelectTransport.Size = new System.Drawing.Size(442, 33);
+            this.comboBox_SelectTransport.Size = new System.Drawing.Size(296, 24);
             this.comboBox_SelectTransport.TabIndex = 10;
             this.comboBox_SelectTransport.SelectedIndexChanged += new System.EventHandler(this.comboBox_SelectTransport_SelectedIndexChanged);
             // 
             // dateTimePicker_SelectDate
             // 
             this.dateTimePicker_SelectDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_SelectDate.Location = new System.Drawing.Point(236, 482);
+            this.dateTimePicker_SelectDate.Location = new System.Drawing.Point(157, 200);
+            this.dateTimePicker_SelectDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker_SelectDate.Name = "dateTimePicker_SelectDate";
-            this.dateTimePicker_SelectDate.Size = new System.Drawing.Size(442, 31);
+            this.dateTimePicker_SelectDate.Size = new System.Drawing.Size(296, 22);
             this.dateTimePicker_SelectDate.TabIndex = 11;
-            // 
-            // PriceField
-            // 
-            this.PriceField.Location = new System.Drawing.Point(318, 407);
-            this.PriceField.Name = "PriceField";
-            this.PriceField.Size = new System.Drawing.Size(262, 31);
-            this.PriceField.TabIndex = 12;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(353, 379);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(208, 25);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Стоймость поездки";
             // 
             // CreateWaybillPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(961, 872);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.PriceField);
+            this.ClientSize = new System.Drawing.Size(641, 558);
             this.Controls.Add(this.dateTimePicker_SelectDate);
             this.Controls.Add(this.comboBox_SelectTransport);
             this.Controls.Add(this.button_Create);
@@ -175,9 +156,10 @@
             this.Controls.Add(this.LengthField);
             this.Controls.Add(this.comboBox_SelectDriver);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "CreateWaybillPage";
-            this.Text = "CreateWaybillPage";
+            this.Text = "Додавання трекера";
+            this.Load += new System.EventHandler(this.CreateWaybillPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,7 +176,5 @@
         private System.Windows.Forms.Button button_Create;
         private System.Windows.Forms.ComboBox comboBox_SelectTransport;
         private System.Windows.Forms.DateTimePicker dateTimePicker_SelectDate;
-        private System.Windows.Forms.TextBox PriceField;
-        private System.Windows.Forms.Label label6;
     }
 }
